@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Подать объявление — НайдиВещь</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="header"><div class="container"><a class="logo" href="index.html">Найди<span>Вещь</span></a><nav class="nav"><a href="index.html">Главная</a><a href="feed.html">Лента</a><a href="publish.html" class="active">Подать объявление</a><a href="inbox.html">Обращения</a></nav></div></header>
+<main class="container"><form class="form panel" id="publish-form" action="#" method="post" novalidate>
+<h1>Подать объявление</h1><p class="meta" style="margin:0 0 8px">Поля, отмеченные звёздочкой, обязательны.</p>
+<label>Тип объявления *</label><div class="seg"><span class="on l" data-pick="l">? Потеряно</span><span data-pick="f">✓ Найдено</span></div>
+<label for="title">Название предмета *</label><input type="text" id="title" name="title" placeholder="Например: чёрный кошелёк" required>
+<div class="row"><div><label for="cat">Категория *</label><select id="cat" name="category" required><option>Выберите категорию</option><option>Документы</option><option>Ключи</option><option>Электроника</option><option>Сумки и рюкзаки</option><option>Одежда</option><option>Животные</option><option>Другое</option></select></div>
+<div><label for="date">Дата *</label><input type="date" id="date" name="event_date" value="2026-11-12" required></div></div>
+<label for="place">Место *</label><input type="text" id="place" name="place" placeholder="Район, станция метро, адрес" required>
+<div class="hint">Чем точнее место, тем проще владельцу найти объявление.</div>
+<label for="desc">Описание *</label><textarea id="desc" name="description" placeholder="Цвет, размер, особые приметы. Не указывайте номера документов целиком." required></textarea>
+<label for="mail">E-mail для уведомлений *</label><input type="email" id="mail" name="email" placeholder="name@example.com" required>
+<div class="hint">Адрес не показывается в объявлении: на него придут обращения.</div>
+<p style="margin:20px 0 0;display:flex;gap:10px"><button class="btn" type="submit">Опубликовать</button><a class="btn ghost" href="feed.html">Отмена</a></p></form></main><footer class="footer"><div class="container">НайдиВещь — площадка объявлений о найденных и потерянных предметах. Учебный проект, 2026. Все объявления на странице — демонстрационные.</div></footer>
+<script src="js/main.js"></script></body></html>
